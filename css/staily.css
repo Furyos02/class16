@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+:root{
+    --maincolor: #AB2F52;
+}
+a{
+    text-decoration: none;
+}
+h6{
+    height: 3px;
+    background-color: lightgray;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+h6 > span{
+    width: 30%;
+    background-color: var(--maincolor);
+}
+main h2{
+    color: var(--maincolor);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+body,
+main,
+footer,
+figcaption,
+form,
+.testimonials,
+main > section,
+main > section > article,
+.services aside,
+.contact ul{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-image: url("/img/pic-10.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+header > article{
+    width: 98%;
+    height: 98%;
+    padding: 1%;
+}
+
+img{
+    width: 40%;
+}
+/* mobile */
+@media(min-width: 200px){
+    main > section{
+        padding-bottom: 10vh;
+    }
+    main > section > section{
+        display: flex;
+    }
+    .testimonials,
+    .services aside,
+    .contact ul{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        background-color: black;
+        padding: 1%;
+        text-align: center;
+        color: whitesmoke;
+        row-gap: 3vh;
+        align-items: center;
+    }
+    footer p{
+        width: 70%;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+        column-gap: 4vh;
+        list-style-type: none;
+    }
+    footer a{
+        color: whitesmoke;
+    }
+    /* contact */
+    .contact{
+        align-items: center;
+    }
+    .contact > section{
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact ul{
+        row-gap: 3vh;
+    }
+    .contact li{
+        display: flex;
+        column-gap: 3vh;align-items: flex-end;
+    }
+    .contact [class*="fa-"]{
+        color: var(--maincolor);
+        font-size: 18px;
+    }
+    .contact ul aside{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+    .contact a{
+        color: dimgray;
+    }
+    form{
+        width: 100%;
+    }
+}
