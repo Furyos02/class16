@@ -4,6 +4,9 @@
     padding: 0;
     font-family: "montserrat", sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --maincolor: #AB2F52;
 }
@@ -119,5 +122,23 @@ img{
     }
     form{
         width: 100%;
+        row-gap: 3vh;
     }
+    form > aside{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input{
+        width: 96%;
+        padding: 4px;
+        border: none;
+
+    }
+    textarea{
+        resize: none;
+        height: 20vh;
+        padding: 4px;
+        width: 95;
+    }
+    
 }
