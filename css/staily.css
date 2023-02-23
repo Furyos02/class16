@@ -93,6 +93,35 @@ img{
     footer a{
         color: whitesmoke;
     }
+    /* testmonios */
+    .testimonials{
+        background-image: url(/img/pic-11.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    .testimonials i{
+        font-size: 28px;
+        color: var(--maincolor);
+    }
+    .testimonials > article{
+        row-gap: 4vh;
+        padding: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: rgb(30, 30, 30, .8);
+    }
+    .testimonials h5{
+        color: orange;
+    }
+    .testimonials span{
+        font-weight: 700;
+        color: whitesmoke;
+    }
+    .testimonials p{
+        color: whitesmoke;
+    }
     /* contact */
     .contact{
         align-items: center;
@@ -138,7 +167,7 @@ img{
         resize: none;
         height: 20vh;
         padding: 4px;
-        width: 95;
+        width: 95%;
     }
-    
+
 }
