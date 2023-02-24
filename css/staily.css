@@ -271,6 +271,7 @@ img{
         width: 96%;
         padding: 4px;
         border: none;
+        border-bottom: 1px solid black;
 
     }
     textarea{
@@ -290,5 +291,14 @@ img{
     }
     .about > figure > img{
         float: left;
+    }
+}
+@media (min-width: 1000px){
+    .contact aside{
+        width: 95%;
+        justify-content: space-between;
+    }
+    .contact aside input{
+        width: 40%;
     }
 }
