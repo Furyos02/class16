@@ -281,3 +281,14 @@ img{
     }
 
 }
+@media(min-width: 600px){
+    header{
+        font-size: 50px;
+    }
+    main{
+        font-size: 30px;
+    }
+    .about > figure > img{
+        float: left;
+    }
+}
